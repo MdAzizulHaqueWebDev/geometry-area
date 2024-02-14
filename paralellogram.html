@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallelogram Area </title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+    <style>
+
+    </style>
+</head>
+<body>
+    <main>
+        <div class=" gap-5 flex justify-center">
+            <div class="card mt-7 w-96 bg-purple-100 drop-shadow-lg ">
+                <h1  class="text-3xl text-center font-extrabold ">Parallelogram Area</h1>
+                <figure class="px-10 pt-10">
+                  <img src="images/parallelogram.png" alt="Parallelogram" class="rounded-xl" />
+                </figure>
+                <div class="card-body">
+                    <h2 class="font-extrabold text-center">Parallelogram</h2>
+                    <p class="text-2xl text-center">Area (A) = b x h </p>
+                    <div>
+                      <input id="parallelogram-base" class="w-20 p-2 text-2xl rounded-md" placeholder="b" type="text">
+                      <span class="mr-2 ml-1">cm</span>
+                      <input id="parallelogram-height" class="w-20 p-2 text-2xl rounded-md" placeholder="h" type="text">
+                      <span class="mr-2 ml-1">cm</span>
+                    </div>
+                    <div>
+                      <p class="text-2xl font-medium">Area: 
+                        <span id="span-area"></span>
+                        <span>cm</span>
+                      </p>
+                    </div>
+                    <div class="card-actions ">
+                      <button  onclick="calculateParallelogramCall()" class="btn btn-primary w-full">Calculate</button>
+                    </div>
+                  </div>
+               
+        </div>
+        <!-- card two -->
+            <div class="card mt-7 w-96 bg-purple-100 drop-shadow-lg ">
+                <h1  class="text-3xl text-center font-extrabold ">square Area</h1>
+                <figure class="px-10 pt-10">
+                  <img src="images/pentagon.png" alt="pentagon" class="rounded-xl" />
+                </figure>
+                <div class="card-body">
+                    <h2 class="font-extrabold text-center">square</h2>
+                    <p class="text-2xl text-center">Area (A) = b x b </p>
+                    <div>
+                      <input id="square-base" class="w-20 p-2 text-2xl rounded-md" placeholder="b" type="text">
+                      <span class="mr-2 ml-1">cm</span>
+                      <input id="square-height" class="w-20 p-2 text-2xl rounded-md" placeholder="h" type="text">
+                      <span class="mr-2 ml-1">cm</span>
+                    </div>
+                    <div>
+                      <p class="text-2xl font-medium">Area: 
+                        <span id="square-area-view"></span>
+                        <span>cm</span>
+                      </p>
+                    </div>
+                    <div class="card-actions ">
+                      <button  onclick="calculateParallelogramCall()" class="btn btn-primary w-full">Calculate</button>
+                    </div>
+                  </div>
+               
+        </div>
+    </main>
+    <script src="js/parallelogram.js"></script>
+</body>
+</html>
